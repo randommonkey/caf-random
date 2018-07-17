@@ -1,0 +1,62 @@
+ciudad,country_name,pais_esp,ggch,hgch,FIPS_CNTRY,ADMIN_NAME,lat,lon
+Buenos Aires,Argentina,Argentina,arg_provinces,countries/ar/ar-all,AR,Distrito Federal,-34.603333,-58.381667
+Córdoba,Argentina,Argentina,arg_provinces,countries/ar/ar-all,AR,,-31.4135,-64.18105
+Rosario,Argentina,Argentina,arg_provinces,countries/ar/ar-all,AR,Santa Fe,-32.95,-60.666667
+S. C. Sierra,Bolivia,Bolivia,bol_departments,countries/bo/bo-all,BO,Santa Cruz de la Sierra,-17.78629,-63.18117
+Florianópolis,Brazil,Brasil,bra_states,countries/br/br-all,BR,,-27.5966702,-48.5491714
+Manaos,Brazil,Brasil,bra_states,countries/br/br-all,,,-3.10194,-60.025
+Salvador,Brazil,Brasil,bra_states,countries/br/br-all,BR,Bahia,-12.974722,-38.476667
+Belém,Brazil,Brasil,bra_states,countries/br/br-all,,,-1.45583,-48.50444
+Belo Horizonte,Brazil,Brasil,bra_states,countries/br/br-all,BR,Minas Gerais,-19.916667,-43.933333
+Brasília,Brazil,Brasil,bra_states,countries/br/br-all,,,-15.77972,-47.92972
+Criciúma,Brazil,Brasil,bra_states,countries/br/br-all,,,-28.6774998,-49.3697205
+Campinas,Brazil,Brasil,bra_states,countries/br/br-all,,,-22.90556,-47.06083
+Curitiba,Brazil,Brasil,bra_states,countries/br/br-all,BR,Parana,-25.416667,-49.25
+Fortaleza,Brazil,Brasil,bra_states,countries/br/br-all,,,-3.71722,-38.54306
+Goiânia,Brazil,Brasil,bra_states,countries/br/br-all,,,-16.6786098,-49.253891
+Juiz de Fora,Brazil,Brasil,bra_states,countries/br/br-all,,,-21.76417,-43.35028
+Londrina,Brazil,Brasil,bra_states,countries/br/br-all,,,-23.3102798,-51.1627808
+Natal,Brazil,Brasil,bra_states,countries/br/br-all,,,-5.795,-35.20944
+Niterói,Brazil,Brasil,bra_states,countries/br/br-all,,,-22.883329,-43.103611
+Porto Alegre,Brazil,Brasil,bra_states,countries/br/br-all,BR,Rio Grande do Sul,-30.033056,-51.23
+Guarulhos,Brazil,Brasil,bra_states,countries/br/br-all,,,-23.46278,-46.533329
+Recife,Brazil,Brasil,bra_states,countries/br/br-all,BR,Pernambuco,-8.05,-34.9
+Rio de Janeiro,Brazil,Brasil,bra_states,countries/br/br-all,BR,Rio de Janeiro,-22.908333,-43.196389
+São Paulo,Brazil,Brasil,bra_states,countries/br/br-all,,,-23.5475,-46.63611
+Sumaré,Brazil,Brasil,bra_states,countries/br/br-all,,,-22.8374,-47.252
+São Paulo - Metropolitan area,Brazil,Brasil,bra_states,countries/br/br-all,,,-23.5475,-46.63611
+Uberaba,Brazil,Brasil,bra_states,countries/br/br-all,,,-19.7483292,-47.9319382
+Uberlândia,Brazil,Brasil,bra_states,countries/br/br-all,,"Uberlândia, Minas Gerais",-18.9186096,-48.2772217
+Concepción,Chile,Chile,chl_regions,countries/cl/cl-all,CI,,-36.82699,-73.04977
+Santiago,Chile,Chile,chl_regions,countries/cl/cl-all,CI,Region Metropolitana,-33.45,-70.666667
+Barranquilla,Colombia,Colombia,col_departments,countries/co/co-all,CO,Atlantico,10.963889,-74.796389
+Bucaramanga,Colombia,Colombia,col_departments,countries/co/co-all,,,7.12539,-73.1198
+Bogotá,Colombia,Colombia,col_departments,countries/co/co-all,,,4.60971,-74.08175
+Cali,Colombia,Colombia,col_departments,countries/co/co-all,CO,Valle del Cauca,3.420556,-76.522222
+Cartagena,Colombia,Colombia,col_departments,countries/co/co-all,,,10.3997202,-75.5144424
+Medellín,Colombia,Colombia,col_departments,countries/co/co-all,,,6.2518401,-75.563591
+Montería,Colombia,Colombia,col_departments,countries/co/co-all,,,8.74798,-75.88143
+Pereira,Colombia,Colombia,col_departments,countries/co/co-all,CO,Risaralda,4.814278,-75.694558
+San José,Costa Rica,Costa Rica,cri_provinces,countries/cr/cr-all,CR,,9.93333,-84.08333
+Guayaquil,Ecuador,Ecuador,ecu_provinces,countries/ec/ec-all,EC,,-2.20584,-79.90795
+Quito,Ecuador,Ecuador,ecu_provinces,countries/ec/ec-all,EC,Pichincha,-0.233333,-78.516667
+Gran San Salvador,El Salvador,El Salvador,slv_departments,countries/sv/sv-all,SV,,13.68935,-89.18718
+Guatemala,Guatemala,Guatemala,gtm_departments,countries/gt/gt-all,GT,,15.5,-90.25
+Acapulco,Mexico,México,mex_states,countries/mx/mx-all,MX,,16.86336,-99.8901
+Chihuahua,Mexico,México,mex_states,countries/mx/mx-all,,,28.63528,-106.08889
+Guadalajara,Mexico,México,mex_states,countries/mx/mx-all,MX,Jalisco,20.666667,-103.35
+Guadalupe,Mexico,México,mex_states,countries/mx/mx-all,,,25.67678,-100.25646
+Juárez,Mexico,México,mex_states,countries/mx/mx-all,,,31.7333298,-106.4833298
+León de los Aldama,Mexico,México,mex_states,countries/mx/mx-all,,,21.12908,-101.67374
+Mexico City,Mexico,México,mex_states,countries/mx/mx-all,,,23,-102
+Mexico City - Metropolitan Area,Mexico,México,mex_states,countries/mx/mx-all,,,23,-102
+Monterrey,Mexico,México,mex_states,countries/mx/mx-all,,,25.67507,-100.31847
+Pachuca,Mexico,México,mex_states,countries/mx/mx-all,,,20.117,-98.7333
+Puebla,Mexico,México,mex_states,countries/mx/mx-all,,,19.0133,-98.3933
+Panama,Panama,Panamá,pan_provinces,countries/pa/pa-all,PA,Panama,8.983333,-79.516667
+Lima,Peru,Perú,per_regions,countries/pe/pe-all,PE,Lima,-12.043333,-77.028333
+Port of Spain - Arima,Trinidad and Tobago,Trinidad y Tobago,tto_regions,countries/tt/tt-all,TT,,11,-61
+Montevideo,Uruguay,Uruguay,ury_departments,countries/uy/uy-all,UY,Montevideo,-34.883611,-56.181944
+Barquisimeto,Venezuela,Venezuela,venezuela_states,countries/ve/ve-all,VE,,10.0647,-69.35703
+Caracas,Venezuela,Venezuela,venezuela_states,countries/ve/ve-all,VE,Distrito Federal,10.5,-66.916667
+Merida,Venezuela,Venezuela,venezuela_states,countries/ve/ve-all,VE,,8.58972,-71.15611

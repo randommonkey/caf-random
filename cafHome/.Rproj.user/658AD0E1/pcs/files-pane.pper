@@ -1,0 +1,13 @@
+{
+    "path" : "~/Repos/caf-omu2/cafHome/www",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.shiny-output-error {
+  visibility: hidden; 
+}
+
+*:before,
+*:after {
+  box-sixing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f9fb;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid {
+  padding-right: 0px !important; 
+  padding-left: 0px !important; 
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100%;
+  height: 100%;
+}
+
+.contCaf {
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;/*repeat(2, 1fr);*/
+  align-items: flex-start;
+}
+
+.contBotones {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-gap: 20px;
+  position: relative;
+  width: max-content;
+}
+
+#descripcion {
+  margin-top: 10%;
+}
+
+.latStyle {
+   margin: 30px 85px;  
+}
+
+.butTemas {
+  width: 70px;
+  height: 70px;
+  font-size: 11px;
+  text-align: left;
+  margin: auto !important;
+  padding: auto;
+  background-color: transparent;
+  border: 1px solid #005186;
+  border-radius: 2px;
+  color: #005186;
+}
+
+
+.contMenu{
+  background-color: transparent;
+}
+
+
+.contMenu:hover .butTemas {
+  background-color: #005186;
+  border-color: #005186;
+  color: white;
+}
+
+.dropdownMenuFicha {
+  border: 1px solid #005186;
+  background: #005186;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdownMenuContent{
+  margin: 25px 15px;
+}
+
+.dropdownMenuContent a:hover {
+  color: #509f27;
+}
+
+
+.dropdown-content {
+  display: inline-flex;
+  flex-direction: column;
+}
+.dropdownMenuContent a {
+  color: #fff;
+  font-size: 11px;
+  cursor: pointer;
+  display: block;
+  line-height: 15px;
+  text-decoration: none;
+}
+
+.highcharts-container {
+  margin-right: 35px;
+  float: right;
+}
+
+.contMenu:hover .dropdownMenuFicha {
+  display: block;
+  margin-top: -5px;
+}
+
+.modal-content{
+  background: #5359a6;
+}
+
+
+.modal-dialog {
+  width: 80%;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: none !important;
+}
+
+#socEcon {
+  margin-top: 30px;
+}
+
+.colTabDesc {
+ width: 180px;
+ font-size: 13px;
+}
+
+.colTabValr {
+  /*width: 500px;*/
+  font-size: 11px;
+}
+
+#movElg {
+  margin-left: 17px;
+}
+
+#DespMov,#DesVial,#DesTrans {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.circulo {
+  background: #cfebdf;
+  border-radius: 50%;
+  height: 37px;
+  width: 37px;
+}
+
+.circuloPequ {
+  background: #cfebdf;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.ContSigla {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  width: max-content;
+  text-align: -webkit-center;
+  grid-gap: 6px;
+  padding: 1%;
+  color: #000;
+}
+
+
+
+#siglasMapa {
+  position: absolute;
+  margin-top: -9%;
+  margin-left: 35%;
+}

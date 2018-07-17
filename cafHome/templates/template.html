@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+  <!-- template.html -->
+  <html>
+  <head>
+   <style>
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.modal-body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5359a6 !important;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contFicha {
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-right: 10px;
+}
+
+#styleScroll::-webkit-scrollbar-track {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#styleScroll::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+#styleScroll::-webkit-scrollbar-thumb {
+    background-color: #6e9792;
+    border: 2px solid #6e9792;
+}
+
+ hr {
+    margin-top: 0px;
+    margin-bottom: 3%;
+    border: 1px solid #fff;
+    border-top: 0px;
+    margin-right: 20px;
+}
+
+.highcharts-axis-labels .highcharts-xaxis-labels {
+  color: red !important;
+}
+
+</style>
+  {{ headContent() }}
+</head>
+  <body>
+ 
+
+<div class = 'row'>
+  <div class = 'col-sm-3'>
+{{grafico}}
+{{contenidoFicha}}
+</div>
+<div class = 'col-sm-9'>
+  <div class = 'contFicha' id = 'styleScroll'>
+{{ciudadP}}
+
+
+<p style = "margin-top:7%;font-size:15px">Socioéconomico</p>
+<hr>
+{{Socioeconomico}}
+<p style = "margin-top:7%;font-size:15px">Movilidad</p>
+<hr>
+{{TextMovil}}
+{{Movilidad}}
+<p style = "margin-top:7%;font-size:15px">Tarifas, recaudo y subsidios - TC</p>
+<hr>
+{{TextTransp}}
+{{Transporte}}
+<p style = "margin-top:7%;font-size:15px">Seguridad vial</p>
+<hr>
+{{TextSegur}}
+{{Seguridad}}
+
+</div>
+</div>
+</div>
+
+  </body>
+ 
+  </html>

@@ -1,0 +1,12 @@
+name: cafHome
+title: cafHome
+username:
+account: randommonkey
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 305924
+bundleId: 1417336
+url: https://randommonkey.shinyapps.io/cafHome/
+when: 1528396808.47183
+asMultiple: FALSE
+asStatic: FALSE
