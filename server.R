@@ -1,8 +1,3 @@
-library(shiny)
-library(shinyjs)
-library(geomagic)
-library(tidyverse)
-library(hgchmagic)
 
 
 dataCaf <- read_csv('data/clean/movilidad_latam_data.csv')
@@ -145,20 +140,20 @@ shinyServer(function(input, output, session) {
                 style = list(
                   fontFamily= 'Open Sans'
                 )) %>%
-       hc_add_series_map(map = mapLam, showInLegend = FALSE, nullColor = "transparent",
-                         borderWidth = 1, borderColor = '#466575',
-                         df = dataSerie(),  value = "z", joinBy = "name", 
+       hc_add_series_map(map = mapLam, showInLegend = FALSE, nullColor = "#005186",
+                         borderWidth = 1, borderColor = '#fff',#'#466575',
+                         df = dataSerie(),  value = "z", joinBy = "name",
                          allowPointSelect = TRUE,
                          tooltip= list(
                            headerFormat= '',
                            pointFormat='<b>{point.name}</b>'
                          )) %>%
-       hc_colorAxis(maxColor = "transparent", minColor = "transparent") %>% 
+       hc_colorAxis(maxColor = "#005186", minColor = "#005186") %>% 
        hc_legend(enabled = FALSE) %>% 
        hc_add_series(data = dataBubble(), type = "mapbubble",
                      dataLabels= list(
                        enabled= TRUE,
-                       color= '#466575',
+                       color= '#000',
                        format = '{point.name}',
                        style= list(
                          fontWeight = 'bold',
@@ -192,8 +187,8 @@ shinyServer(function(input, output, session) {
      if(is.null(varS) | identical(varS, character(0))) return()
   
       HTML(paste0(
-        '<span style="color:#73ca9b;font-size: 18px;font-weight: 600;">',dicCaf$grupo[dicCaf$id == varS],'</span>', 
-        '<p style="color:#6e9792;margin-top: 10px;"><b>', dicCaf$label[dicCaf$id == varS], ': </b>',
+        '<span style="color:#509f27;font-size: 18px;font-weight: 600;">',dicCaf$grupo[dicCaf$id == varS],'</span>', 
+        '<p style="color:#000;margin-top: 10px;"><b>', dicCaf$label[dicCaf$id == varS], ': </b>',
         dicCaf$Descripción[dicCaf$id == varS] ,'</p><p><b>'
       ))
    })
@@ -486,6 +481,10 @@ shinyServer(function(input, output, session) {
      )
      
      
+   })
+   
+   output$bla <- renderPrint({
+     datTrans()
    })
    
    

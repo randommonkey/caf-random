@@ -3,7 +3,6 @@
 # if (!require("tidyverse")) install.packages("tidyverse")
 # if (!require("shinyjs")) install.packages("shinyjs")
 # if (!require("highcharter")) install.packages("highcharter")
-# if (!require("hgchmagic")) devtools::install_github("randommonkey/hgchmagic")
 # if (!require("geomagic")) devtools::install_github("randommonkey/geomagic")
 
 library(shiny)

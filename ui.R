@@ -1,6 +1,3 @@
-library(shiny)
-library(shinyjs)
-library(highcharter)
 
 shinyUI(
   fluidPage(
@@ -17,8 +14,9 @@ shinyUI(
        uiOutput('botonesT'),
        uiOutput('descripcion')),
        div(class = 'mapaStyle',
-       highchartOutput('Mapa', width = 750, height = 650),
-       uiOutput('siglasMapa')
+       highchartOutput('Mapa', width = 750, height = 575),
+       uiOutput('siglasMapa')#,
+       #verbatimTextOutput('bla')
        )#,
        #verbatimTextOutput('tabala')
        )
