@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "452756703",
+    "hash" : "0",
     "id" : "46733F84",
-    "lastKnownWriteTime" : 1531853213,
-    "last_content_update" : 1531853213535,
+    "lastKnownWriteTime" : 1531854449,
+    "last_content_update" : 1531854449899,
     "path" : "~/Repos/caf-random/cafHome/global.R",
     "project_path" : "global.R",
     "properties" : {
-        "cursorPosition" : "1,14",
+        "cursorPosition" : "10,1",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },

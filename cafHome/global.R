@@ -8,6 +8,6 @@
 
 library(shiny)
 library(shinyjs)
-library(geomagic)
+#library(geomagic)
 library(tidyverse)
 library(hgchmagic)
