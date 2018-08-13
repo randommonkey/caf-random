@@ -140,7 +140,7 @@ shinyServer(function(input, output, session) {
                 style = list(
                   fontFamily= 'Open Sans'
                 )) %>%
-       hc_add_series_map(map = mapLam, showInLegend = FALSE, nullColor = "#005186",
+       hc_add_series_map(map = mapLam, showInLegend = FALSE, nullColor = "#70a6ca",
                          borderWidth = 1, borderColor = '#fff',#'#466575',
                          df = dataSerie(),  value = "z", joinBy = "name",
                          allowPointSelect = TRUE,
@@ -148,7 +148,7 @@ shinyServer(function(input, output, session) {
                            headerFormat= '',
                            pointFormat='<b>{point.name}</b>'
                          )) %>%
-       hc_colorAxis(maxColor = "#005186", minColor = "#005186") %>% 
+       hc_colorAxis(maxColor = "#70a6ca", minColor = "#70a6ca") %>% 
        hc_legend(enabled = FALSE) %>% 
        hc_add_series(data = dataBubble(), type = "mapbubble",
                      dataLabels= list(
@@ -158,15 +158,18 @@ shinyServer(function(input, output, session) {
                        style= list(
                          fontWeight = 'bold',
                          textShadow = FALSE,
+                         fontSize = '13px',
                          fontFamily = 'Open Sans',
-                         textOutline = FALSE
-                       )),
+                         textOutline = FALSE#,
+                         #color = '#4CB8FF'
+                       )
+                       ),
                      allowPointSelect = TRUE,
                      cursor = 'pointer', minSize = ifelse(mean(dataBubble()$z) == 1, '0.5%', '1%'),
                      maxSize = ifelse(mean(dataBubble()$z) == 1, 0.5, 50),
                      marker= list(
                        fillOpacity=0.8),
-                     color = "#cfebdf", events = list(click = myClickFunc),
+                     color = "#f7af2d", events = list(click = myClickFunc),
                      tooltip= list(
                        headerFormat= '',
                        pointFormat='<b>{point.name}</b><br>

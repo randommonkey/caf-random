@@ -9,6 +9,9 @@ shinyUI(
       includeScript("js/iframeSizer.contentWindow.min.js"),
       includeScript("js/caf.js")
     ),
+   HTML('<h5 style="margin-left:3%;font-weight: 600;">Este portal integra múltiples bases de datos que permiten entender 
+        las problemáticas de movilidad en América Latina y aportar al 
+        desarrollo de políticas sostenibles.</h2>'),
    div(class = 'contCaf',
        div(class = 'latStyle',
        uiOutput('botonesT'),
