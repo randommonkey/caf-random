@@ -35,6 +35,11 @@ body {
   align-items: flex-start;
 }
 
+@media all and (max-width: 470px) {
+  .contCaf {
+  display: block;
+}
+}
 .contBotones {
   display: grid;
   grid-template-columns: repeat(4, 70px);

@@ -12,12 +12,12 @@ shinyUI(
    HTML('<h5 style="margin-left:3%;font-weight: 600;">Este portal integra múltiples bases de datos que permiten entender 
         las problemáticas de movilidad en América Latina y aportar al 
         desarrollo de políticas sostenibles.</h2>'),
-   div(class = 'contCaf',
+   div(class = 'col-xs-12 contCaf',
        div(class = 'latStyle',
        uiOutput('botonesT'),
        uiOutput('descripcion')),
        div(class = 'mapaStyle',
-       highchartOutput('Mapa', width = 750, height = 575),
+       highchartOutput('Mapa', width = 700, height = 611),
        uiOutput('siglasMapa')#,
        #verbatimTextOutput('bla')
        )#,
