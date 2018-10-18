@@ -1,7 +1,13 @@
 
 
 dataCaf <- read_csv('data/clean/movilidad_latam_data.csv')
+dataCaf <- dataCaf %>% select(-`fleet_buses.3`)
 dicCaf <- read_csv('data/clean/movilidad_latam_dic_.csv') %>% drop_na(grupo)
+dicCaf <- dicCaf %>% filter(id != 'fleet_buses.3')
+dicCaf$Unidad[dicCaf$Unidad == 'Porcentaje'] <- '%'
+dicCaf$Unidad[dicCaf$Unidad == 'Número'] <- ''
+dicCaf$Unidad[dicCaf$Unidad == '-'] <- ''
+dicCaf$Unidad[is.na(dicCaf$Unidad)] <- ''
 dicCaf <- dicCaf %>% filter(ctypes == 'Num')
 dataCaf <- dataCaf[, c('pais', 'ciudad',dicCaf$id)]
 mapLam <- jsonlite::fromJSON("data/latin-america.json", simplifyVector = FALSE)
@@ -114,7 +120,11 @@ shinyServer(function(input, output, session) {
      } else {
        df1 <- datM %>% select(name = ciudad, lat, lon, z = varS) %>% drop_na()
        df1$label <- dicCaf$label[dicCaf$id == varS]
+       if (varS == 'tarifa_minimo') {
+       df1$w <- map_chr(df1$z, function(x) format(round(x,4), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=",")) 
+       } else {
        df1$w <- map_chr(df1$z, function(x) format(round(x,2), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=","))
+       }
      }
      
      df1
@@ -473,14 +483,14 @@ shinyServer(function(input, output, session) {
      varS <- trimws(input$last_btn)
      if(is.null(varS)) varS <- "population_city"
      if(identical(varS, character(0))) varS <- "population_city"
-     a <- dicCaf$Unidad[dicCaf$id == varS]
+     a <- HTML(dicCaf$Unidad[dicCaf$id == varS])
      if (is.na(a)) a <- ''
      
      div(class = 'ContSigla',
      div(class = 'circulo', ''),
-     paste0(dataBubble() %>%  filter(z == max(dataBubble()$z)) %>%  .$w, ' ', a),
+     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == max(dataBubble()$z)) %>%  .$w), ' ', a, '</span>')),
      div(class = 'circuloPequ', ''),
-     paste0(dataBubble() %>%  filter(z == min(dataBubble()$z)) %>%  .$w, ' ', a)
+     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == min(dataBubble()$z)) %>%  .$w), ' ', a, '</span>'))
      )
      
      
