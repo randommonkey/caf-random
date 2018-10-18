@@ -488,9 +488,9 @@ shinyServer(function(input, output, session) {
      
      div(class = 'ContSigla',
      div(class = 'circulo', ''),
-     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == max(dataBubble()$z)) %>%  .$w), ' ', a, '</span>')),
+     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == max(dataBubble()$z)) %>%  .$w), ' <span>', a, '</span></span>')),
      div(class = 'circuloPequ', ''),
-     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == min(dataBubble()$z)) %>%  .$w), ' ', a, '</span>'))
+     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == min(dataBubble()$z)) %>%  .$w), ' <span>', a, '</span></span>'))
      )
      
      
