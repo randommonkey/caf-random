@@ -78,7 +78,9 @@ caf_theme <- hc_theme(
 
 
 hcoptslang <- getOption("highcharter.lang")
-hcoptslang$thousandsSep <- ","
+hcoptslang$thousandsSep <- "."
+hcoptslang$decimalPoint <- ","
+options(highcharter.lang = hcoptslang)
 
 shinyServer(function(input, output, session) {
 
@@ -121,9 +123,9 @@ shinyServer(function(input, output, session) {
        df1 <- datM %>% select(name = ciudad, lat, lon, z = varS) %>% drop_na()
        df1$label <- dicCaf$label[dicCaf$id == varS]
        if (varS == 'tarifa_minimo') {
-       df1$w <- map_chr(df1$z, function(x) format(round(x,4), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=",")) 
+       df1$w <- map_chr(df1$z, function(x) format(round(x,4), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=".", decimal.mark = ",")) 
        } else {
-       df1$w <- map_chr(df1$z, function(x) format(round(x,2), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=","))
+       df1$w <- map_chr(df1$z, function(x) format(round(x,2), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=".", decimal.mark = ","))
        }
      }
      
@@ -271,7 +273,7 @@ shinyServer(function(input, output, session) {
    output$socEcon <- renderUI({
 
      dataC <- datSocEc()
-     dataC$valor <- map_chr(dataC$valor, function(x) format(round(x,2), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=","))
+     dataC$valor <- map_chr(dataC$valor, function(x) format(round(x,2), nsmall=(ifelse(count_pl(x)>2, 2, 0)), big.mark=".", decimal.mark = ","))
 
      if (nrow(dataC) == 0) return()
      
