@@ -488,12 +488,22 @@ shinyServer(function(input, output, session) {
      a <- HTML(dicCaf$Unidad[dicCaf$id == varS])
      if (is.na(a)) a <- ''
      
+     maxValue <- unique(dataBubble() %>%  filter(z == max(dataBubble()$z)) %>%  .$w)
+     minValue <- unique(dataBubble() %>%  filter(z == min(dataBubble()$z)) %>%  .$w)
+     
+     if (maxValue == minValue) {
+      div(class = 'ContSigla',
+                div(class = 'circulo', ''),
+                HTML(paste0('<span>', maxValue, ' <span>', a, '</span></span>'))
+       )
+     } else {
      div(class = 'ContSigla',
      div(class = 'circulo', ''),
-     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == max(dataBubble()$z)) %>%  .$w), ' <span>', a, '</span></span>')),
+     HTML(paste0('<span>', maxValue, ' <span>', a, '</span></span>')),
      div(class = 'circuloPequ', ''),
-     HTML(paste0('<span>', unique(dataBubble() %>%  filter(z == min(dataBubble()$z)) %>%  .$w), ' <span>', a, '</span></span>'))
+     HTML(paste0('<span>', minValue, ' <span>', a, '</span></span>'))
      )
+     }
      
      
    })
